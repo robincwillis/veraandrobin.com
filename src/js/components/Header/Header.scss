@@ -1,0 +1,125 @@
+@import '~sass/variables.scss';
+@import '~gw-ui/dist/sass/mixins';
+
+
+$header-offset :70px;
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	transition: background $md-speed $ease, transform $md-speed $ease;
+	a {
+		// color: currentcolor;
+		cursor: pointer;
+		&:hover, &:focus, &:active {
+
+		}
+	}
+	.inner-header {
+		height: 4.375rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.container {
+		@include respond($lg) {
+	    transition: width $md-speed $ease;
+	    width: calc(100% - #{$margin});
+	  }
+	}
+
+	&.scrolled {
+		box-shadow: 0 1px 0 rgba($text-color, .05);
+		background: $white;
+		color: $text-color;
+		.container {
+			@include respond($lg) {
+		    width: calc(100% - #{$margin});
+		  }
+		}
+		.nav-list {
+			.nav-item {
+				a {
+					&:after {
+						background: $success;
+					}
+				}
+			}
+		}
+		@include respond($lg) {
+			transform: translate3d(0, -$header-offset, 0);
+		}
+	}
+	.logo-link {
+		font-family: $secondary-font;
+		display: block;
+		text-transform: uppercase;
+		color: lighten($text-color, 20%);
+	}
+
+	.nav-list {
+		display: flex;
+		.nav-item {
+			position: relative;
+			&:first-child {
+				a {
+					margin-left: 0;
+				}
+			}
+			a {
+				display: inline-block;
+				cursor: pointer;
+				font-weight: $medium;
+				position: relative;
+				margin: .5rem;
+				color: $success;
+
+				&:after {
+					content: '';
+					display: block;
+					left: 0;
+					right: 0;
+					position: absolute;
+					bottom: -5px;
+					height: 1px;
+					background: $success;
+					transition: background $md-speed $ease, transform $md-speed $ease;
+					animation-fill-mode: both;
+					transform: scaleX(0);
+					transform-origin: right center;
+				}
+				&:hover {
+					&:after {
+						transform-origin: left center;
+						transform: scaleX(1);
+						// animation: link-line-in .5s $ease linear;
+					}
+				}
+			}
+			&.active {
+				a {
+					&:after {
+						transform-origin: left center;
+						transform: scaleX(1);
+						// animation: link-line-in .5s $ease linear;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+@keyframes link-line-in {
+	0% {
+		transform-origin: left center;
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}

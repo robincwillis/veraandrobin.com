@@ -1,0 +1,268 @@
+@import '~gw-ui/dist/sass/variables';
+
+$section-margin : 5.5rem;
+$section-mobile-margin : 10vw;
+
+$margin: 7.142vw; //4rem;
+$mobile-margin: 7.142vw; //6.5vw;
+$min-site-width : 800px;
+$max-site-width: 2500px;
+$site-width : 87%;
+
+$max-text-width : 40rem;
+
+// Global Spacing
+$space-1 : .5rem;
+$space-2 : 1rem;
+$space-3 : 2rem;
+$space-4 : 4rem;
+
+// Grid Settings
+$columns: 12;
+$gutter: 1.75rem;
+$gutter-tight: $gutter / 2;
+$gutter-medium: $gutter * 2;
+$gutter-wide: $margin;
+
+// General UI Varibales
+$base-border-radius : 0;
+
+// Colors
+$bg-color : #F9F6E7;
+$main-color: #BE996E;
+$black : #000;
+$white : #fff;
+$alert : #C54329;
+$notify :  #BE996E;
+$success : #336B6F;
+$text-color : #342E2C;
+$light-grey : lighten($text-color, 73%);
+$light-text-color : shade($bg-color, 30%);
+
+// Hr
+$hr-color : lighten($text-color, 70%);
+$hr-styles : 1px solid $hr-color;
+
+// Links
+$link-color : $light-text-color;
+$link-hover-color : $success;
+
+// Typography
+$system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+//$main-font: 'Franklin', sans-serif;
+$main-font: 'Cousine', monospace;
+
+//$secondary-font: 'Windsor', serif;
+$secondary-font: 'Playfair Display', serif;
+
+$code-font: 'Roboto Mono', monospace;
+$general-font-smoothing : true;
+$code-font-smoothing : true;
+$base-line-height : 1.5em;
+$base-letter-spacing : .015em;
+$short-line-height : 1.25em;
+$tight-line-height : 1.1em;
+$tracked-out : .125em;
+	// General Text Sizes
+	$base-font-size : 16px;
+	$sm-font-size : 11px;
+	$md-font-size : .875rem;
+	$tiny-font-size : 10px;
+	// Font Weights
+	$normal : normal;
+	$thin : 300;
+	$light : 300;
+	$medium : 600;
+	$bold : 700;
+	// h1
+		$h1-font-family : $secondary-font;
+		$h1-text-transform : uppercase;
+		// $h1-font-size : 4rem;
+		$h1-font-size : 50px;
+		$h1-font-weight : $normal;
+		$h1-line-height : 1.5em;
+		$h1-letter-spacing : .025em;
+		$h1-font-smoothing : true;
+	// h2
+		$h2-font-family : $secondary-font;
+		$h2-text-transform : uppercase;
+		// $h2-font-size : 2.5rem;
+		$h2-font-size : 30px;
+		$h2-font-weight : $normal;
+		$h2-line-height : 1.25em;
+		$h2-letter-spacing : .1em;
+		$h2-font-smoothing : true;
+	// h3
+		$h3-font-family : $secondary-font;
+		$h3-text-transform : uppercase;
+		// $h3-font-size : 4rem;
+		$h3-font-size : 50px;
+		$h3-font-weight : $normal;
+		$h3-line-height : 1.25em;
+		$h3-letter-spacing : .05em;
+		$h3-font-smoothing : true;
+	// h4
+		$h4-font-family : $secondary-font;
+		$h4-text-transform : uppercase;
+		$h4-font-size : 30px;
+		$h4-font-weight : $normal;
+		$h4-line-height : 1.333em;
+		$h4-letter-spacing : inherit;
+		$h4-font-smoothing : true;
+	// h5
+		$h5-font-family : 'Sackers';
+		$h5-text-transform : uppercase;
+		$h5-font-size : 16px;
+		$h5-font-weight : $normal;
+		$h5-line-height : 1.5em;
+		$h5-letter-spacing : .03em;
+		$h5-font-smoothing : true;
+	// h6 is tracked out all caps by default
+		$h6-font-family : $main-font;
+	// p.sm
+		$sm-p-font-size : 12px;
+		$sm-p-font-family : inherit;
+		$sm-p-font-weight : $normal;
+		$sm-p-line-height : $base-line-height;
+		$sm-p-letter-spacing : inherit;
+		// p
+			$p-font-size : 14px;
+			$p-font-family : inherit;
+			$p-font-weight : $normal;
+			$p-line-height : $base-line-height;
+			$p-letter-spacing : inherit;
+		// p.md
+			$md-p-font-size : 16px;
+			$md-p-font-family : inherit;
+			$md-p-font-weight : $normal;
+			$md-p-line-height : $base-line-height;
+			$md-p-letter-spacing : inherit;
+		// p.lg
+			$lg-p-font-size : 18px;
+			$lg-p-font-family : inherit;
+			$lg-p-font-weight : $normal;
+			$lg-p-line-height : $base-line-height;
+			$lg-p-letter-spacing : inherit;
+
+// Text Highlights
+$highlight-bg : rgba($success, 1);
+$highlight-color : $bg-color;
+
+// Button Variables
+$btn-radius: 0;
+$btn-padding: 0 1rem;
+$btn-text-transform: uppercase;
+//$btn-letter-spacing: .03em;
+$btn-weight: $normal;
+$btn-font-style: normal;
+$btn-vertical-offset: 0px;
+$btn-font-smoothing: true;
+
+// Button Sizes
+$btn-height: 46px;
+	$btn-small-height: 30px;
+		$btn-tiny-height: 24px;
+			$btn-large-height: 60px;
+				$btn-micro-height: 20px;
+$btn-font-size: 16px;
+	$btn-small-font-size: $btn-font-size;
+		$btn-tiny-font-size: 9px;
+			$btn-large-font-size: $btn-font-size;
+
+	// Default
+	//$btn-font: 'Sackers';
+	$btn-font: $secondary-font;
+	$btn-bg: $main-color;
+	$btn-border-weight: 1px;
+	$btn-border-color: $main-color;
+	$btn-color: $white;
+	$btn-shadow: none;
+		$btn-hover-bg: darken($btn-bg, 7%);
+		$btn-hover-border-color: $btn-hover-bg;
+		$btn-hover-color: $white;
+		$btn-hover-shadow: none;
+
+	// Secondary
+	$btn-secondary-bg: $success;
+	$btn-secondary-border-color: $btn-secondary-bg;
+	$btn-secondary-color: $bg-color;
+		$btn-secondary-hover-bg: darken($btn-secondary-bg, 10%);
+		$btn-secondary-hover-border-color: $btn-secondary-hover-bg;
+		$btn-secondary-hover-color: $white;
+
+	// Tertiary
+	$btn-tertiary-bg: $black;
+	$btn-tertiary-border-color: $btn-tertiary-bg;
+	$btn-tertiary-color: $main-color;
+		$btn-tertiary-hover-bg: $text-color;
+		$btn-tertiary-hover-border-color: $btn-tertiary-hover-bg;
+		$btn-tertiary-hover-color: $white;
+
+	// Alert
+	$btn-alert-color: $bg-color;
+	// Notify
+	$btn-notify-color: $text-color;
+	// success
+	$btn-success-color: $white;
+
+// Text Inputs
+$input-font : $main-font;
+$input-font-size : $md-p-font-size;
+$input-letter-spaceing : $p-letter-spacing;
+$input-label-weight : $medium;
+$input-font-weight : $medium;
+$input-bg : transparent;
+$input-color : $text-color;
+$input-border : 2px solid $text-color;
+$input-border-radius : 0;
+$input-hover-bg : transparent;
+$input-hover-color : $text-color;
+$input-hover-border : 2px solid darken($main-color, 10%);
+$input-focus-bg : transparent;
+$input-focus-color : $text-color;
+$input-focus-border : 2px solid $success;
+$placeholder-color : $text-color;
+$placeholder-hover-color : rgba($text-color, .4);
+$placeholder-focus-color : rgba($text-color, .3);
+$input-padding: 3px 1em 0;
+$input-text-offset: 0px;
+$input-height: $btn-height;
+$input-large-height: $btn-large-height;
+$input-large-font-size: $md-p-font-size;
+$input-small-height: $btn-small-height;
+$input-small-font-size: .75rem;
+$input-tiny-height: $btn-tiny-height;
+$input-tiny-font-size: $input-small-font-size;
+
+// Select Fields
+$select-border : $input-border;
+$select-bg : transparent;
+$select-color : $light-text-color;
+
+// Modals
+$modal-padding: $gutter;
+$modal-header-font-size: .875rem;
+$modal-full-width-actions: false;
+$modal-overlay-color: rgba($text-color, 0.15);
+$modal-shadow: 0 20px 40px rgba($text-color, .1);
+
+// Breakpoints
+$sm : 450;
+$md : 600;
+$lg : 950;
+$xlg : 1023;
+$xxlg : 1200;
+$huge : 1450;
+
+$colors : (
+	bg-color : $bg-color,
+	main-color : $main-color,
+	black : $black,
+	white : $white,
+	alert : $alert,
+	notify : $notify,
+	success : $success,
+	text-color : $text-color,
+	light-grey : $light-grey,
+	light-text-color : $light-text-color,
+);

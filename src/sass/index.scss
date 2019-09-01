@@ -1,0 +1,26 @@
+// Setup GW UI
+
+@import '~gw-ui/dist/sass/reset';
+@import '~gw-ui/dist/sass/mixins';
+
+@import './variables';
+@import './fonts';
+// Site Specific
+@import './global';
+@import './typography';
+
+
+@import '~gw-ui/dist/sass/base';
+@import '~gw-ui/dist/sass/grid';
+@import '~gw-ui/dist/sass/typography';
+@import '~gw-ui/dist/sass/spacing';
+@import '~gw-ui/dist/sass/icons';
+
+// @import '~gw-ui/dist/sass/animations';
+
+@import '~gw-ui/dist/Button';
+@import '~gw-ui/dist/Input';
+@import '~gw-ui/dist/Select';
+@import '~gw-ui/dist/Radio';
+
+

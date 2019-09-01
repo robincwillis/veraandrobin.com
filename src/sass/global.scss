@@ -1,0 +1,103 @@
+@import './variables';
+
+html, body {
+	overflow: unset;
+}
+
+.page {
+	padding-top: 70px;
+}
+
+.fade-page-in {
+	animation: fade-page-in 1s .5s $ease forwards;
+	animation-fill-mode: both;
+}
+
+section {
+	margin: $mobile-margin 0;
+	@include respond($lg) {
+		margin: ($margin * .75) 0;
+	}
+	&.bg-white,
+	&.bg-dark {
+		margin: 0;
+		padding: ($mobile-margin * 2) 0;
+		@include respond($lg) {
+			padding: ($margin * 2) 0;
+		}
+	}
+	.bg-dark + .block-section.bg-dark,
+	.bg-white + .block-section.bg-white {
+		padding-top: 0;
+	}
+}
+
+.bg-white {
+	background: $white;
+}
+
+@keyframes fade-page-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+input[type='text'], input[type='email'], input[type='number'], input[type='password'] {
+	height: $btn-height;
+}
+
+.input-wrap {
+	input[type='text'], input[type='email'], input[type='number'], input[type='password'] {
+		line-height: 1em;
+	}
+	&.framed {
+		border: 1px solid $text-color;
+		padding: 2px;
+		@include respond($lg) {
+			border-color: $bg-color;
+		}
+	}
+	&.light {
+		input[type='text'],
+		input[type='email'],
+		input[type='number'],
+		input[type='password'] {
+			background: $bg-color !important;
+			border-color: $text-color;
+			@include respond($lg) {
+				border-color: $bg-color;
+			}
+			color: $text-color;
+			caret-color: $main-color;
+			&::-webkit-input-placeholder {
+				color: $text-color;
+			}
+			&:-moz-placeholder {
+				color: $text-color;
+			}
+			&::-moz-placeholder {
+				color: $text-color;
+			}
+			&:-ms-input-placeholder {
+			   color: $text-color;
+			}
+			&:hover, &:focus {
+				&::-webkit-input-placeholder {
+					color: rgba($main-color, .75);
+				}
+				&:-moz-placeholder {
+					color: rgba($main-color, .75);
+				}
+				&::-moz-placeholder {
+					color: rgba($main-color, .75);
+				}
+				&:-ms-input-placeholder {
+				   color: rgba($main-color, .75);
+				}
+			}
+		}
+	}
+}
