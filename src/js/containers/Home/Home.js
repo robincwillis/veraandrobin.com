@@ -54,7 +54,7 @@ class Home extends Component {
 									href="https://goo.gl/maps/ZqAv4qsQrdfHsoud7"
 									target="_blank"
 								/>
-								<div className="show-lg">
+								<div className="hide-at-lg">
 									<Button
 										className="my-2"
 										label="Travel"
@@ -72,9 +72,4 @@ class Home extends Component {
 	}
 }
 
-Home.defaultProps = {
-	lang: 'en-US'
-}
-
 export default Home;
-

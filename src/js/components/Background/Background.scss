@@ -1,13 +1,20 @@
-
+@import '~sass/variables';
+@import '~gw-ui/dist/sass/mixins';
 
 .background {
 	position: fixed;
 	z-index: -1;
 	bottom: -50%;
-  height: 75%;
   overflow: hidden;
   left: 0;
   right: 0;
+
+  height: 200px;
+
+	@include respond($md) {
+  	height: 75%;
+		padding-bottom: 0;
+	}
 
 	img {
 		width: 100%;
