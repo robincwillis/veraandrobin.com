@@ -49,9 +49,16 @@ class Home extends Component {
 								</p>
 
 								<Button
+									className="my-2"
 									label="Map"
 									href="https://goo.gl/maps/ZqAv4qsQrdfHsoud7"
 									target="_blank"
+								/>
+								<br />
+								<Button
+									className="my-2"
+									label="Travel"
+									href="/travel"
 								/>
 							</div>
 						</div>

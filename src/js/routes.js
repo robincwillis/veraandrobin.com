@@ -1,17 +1,14 @@
 import React, { Fragment } from 'react';
 import { Switch, Route  } from 'react-router-dom';
 
-import Home from './containers/Home';
-import Travel from './containers/Travel';
-import RSVP from './containers/RSVP';
+import Home from 'containers/Home';
+import Travel from 'containers/Travel';
+import RSVP from 'containers/RSVP';
+import NotFound from 'containers/NotFound';
 
-import NotFound from './containers/NotFound';
-
-import Header from './components/Header';
+import Header from 'components/Header';
 
 const DefaultLayout = ({ component: Component, ...rest }) => {
-	console.log(rest);
-
 	return(
 		<Route
 			{...rest}

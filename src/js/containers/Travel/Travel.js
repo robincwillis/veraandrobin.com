@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import Background from 'components/Background';
 import Reef1 from 'assets/images/reef-1.jpg';
@@ -33,22 +33,26 @@ const items = [
 class Travel extends Component {
 	render() {
 		return (
-			<div className="page container">
-				<section>
-					<div className="grid-flex center break-lg">
-						<div className="col-10">
-							<h6>Travel & Accomadations</h6>
-							<h4>AirBnB Options</h4>
-							<ul className="grid-flex my-3">
-								{items.map( (item, index) => (
-									<li className="col-6 align-center" dangerouslySetInnerHTML={item} key={index} />
-								))}
-							</ul>
-						</div>
+			<Fragment>
+				<div className="page">
+					<div className="container">
+						<section>
+							<div className="grid-flex center break-lg">
+								<div className="col-10">
+									<h6>Travel & Accomadations</h6>
+									<h4>AirBnB Options</h4>
+									<ul className="grid-flex my-3">
+										{items.map( (item, index) => (
+											<li className="col-6 align-center" dangerouslySetInnerHTML={item} key={index} />
+										))}
+									</ul>
+								</div>
+							</div>
+						</section>
 					</div>
-				</section>
+				</div>
 				<Background image={Reef1} />
-			</div>
+			</Fragment>
 		);
 	}
 }

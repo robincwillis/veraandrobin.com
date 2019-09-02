@@ -95,7 +95,6 @@ class Header extends Component {
 									</div>
 								) : false}
 							</div>
-
 							<div className="col no-grow align-right">
 								<Button
 									className="secondary"
