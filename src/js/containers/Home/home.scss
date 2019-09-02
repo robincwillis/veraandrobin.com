@@ -1,0 +1,13 @@
+@import '~sass/variables';
+@import '~gw-ui/dist/sass/mixins';
+
+.title {
+	span {
+		display: block;
+	}
+	@include respond($md) {
+		span {
+			display: inline;
+		}
+	}
+}

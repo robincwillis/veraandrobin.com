@@ -1,7 +1,6 @@
 @import '~sass/variables.scss';
 @import '~gw-ui/dist/sass/mixins';
 
-
 $header-offset :70px;
 
 .header {
@@ -33,7 +32,7 @@ $header-offset :70px;
 
 	&.scrolled {
 		box-shadow: 0 1px 0 rgba($text-color, .05);
-		background: $white;
+		background: $bg-color;
 		color: $text-color;
 		.container {
 			@include respond($lg) {
