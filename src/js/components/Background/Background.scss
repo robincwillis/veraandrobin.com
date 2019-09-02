@@ -4,14 +4,15 @@
 .background {
 	position: fixed;
 	z-index: -1;
-	bottom: -50%;
   overflow: hidden;
   left: 0;
   right: 0;
 
-  height: 200px;
+	bottom: -35%;
+  height: 400px;
 
 	@include respond($md) {
+	bottom: -50%;
   	height: 75%;
 		padding-bottom: 0;
 	}
