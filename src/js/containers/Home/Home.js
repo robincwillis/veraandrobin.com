@@ -54,12 +54,13 @@ class Home extends Component {
 									href="https://goo.gl/maps/ZqAv4qsQrdfHsoud7"
 									target="_blank"
 								/>
-								<br />
-								<Button
-									className="my-2"
-									label="Travel"
-									href="/travel"
-								/>
+								<div className="show-lg">
+									<Button
+										className="my-2"
+										label="Travel"
+										href="/travel"
+									/>
+								</div>
 							</div>
 						</div>
 					</section>

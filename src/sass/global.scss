@@ -21,6 +21,19 @@ html, body {
 	}
 }
 
+.hide-at-md {
+	@include respond($md) {
+		display: none;
+	}
+}
+
+.hide-at-lg {
+	@include respond($lg) {
+		display: none;
+	}
+}
+
+
 .fade-page-in {
 	animation: fade-page-in 1s .5s $ease forwards;
 	animation-fill-mode: both;
