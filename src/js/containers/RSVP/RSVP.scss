@@ -1,0 +1,11 @@
+@import '~sass/variables';
+
+
+.btn-bg {
+	background: white;
+	display: inline-block;
+}
+
+.select-wrap, .input-wrap {
+	background: $bg-color;
+}

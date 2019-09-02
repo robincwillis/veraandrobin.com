@@ -1,0 +1,32 @@
+@import '~sass/variables.scss';
+
+.scroll-transition-in {
+	&.slow {
+		> * {
+			transition: opacity ($slow-speed * 2) $ease, transform ($slow-speed * 2) $ease;
+			@for $stagger-count from 1 through 20 {
+				$delayMult : $stagger-count + 1;
+			  &:nth-child(#{$delayMult}) {
+			  	transition-delay: ($slow-speed * 2 * .25) * $stagger-count;
+			  }
+			}
+		}
+	}
+	> * {
+		opacity: 0;
+		transform: translate3d(0, 2rem, 0);
+		transition: opacity $slow-speed $ease, transform $slow-speed $ease;
+		@for $stagger-count from 1 through 20 {
+			$delayMult : $stagger-count + 1;
+		  &:nth-child(#{$delayMult}) {
+		  	transition-delay: ($slow-speed * .25) * $stagger-count;
+		  }
+		}
+	}
+	&.in-view {
+		> * {
+			opacity: 1;
+			transform: none;
+		}
+	}
+}

@@ -5,12 +5,15 @@ import { Input, Select, Radio, Button } from 'gw-ui';
 import Background from 'components/Background';
 import Reef2 from 'assets/images/reef-2.jpg';
 
+import './RSVP.scss';
+
 class RSVP extends Component {
 
 	state = {
 		status: '',
 		name: '',
 		count: 1,
+		guest: '',
 		submitting: false,
 		submitted: false,
 		success: false,
@@ -33,8 +36,8 @@ class RSVP extends Component {
   }
 
 	handleClick = (event) => {
-		const { status, name, count } = this.state;
-		const form = { status, name, count };
+		const { status, name, count, guest } = this.state;
+		const form = { status, name, count, guest };
 		const data = new FormData();
 		for ( var key in form ) {
 	    data.append(key, form[key]);
@@ -49,7 +52,7 @@ class RSVP extends Component {
 	}
 
 	render() {
-		const { status, name, count, success, error } = this.state;
+		const { status, name, count, success, error, guest } = this.state;
 		const disabled = !name || name.length === 0 ||  !count ||  !status || status.length === 0;
 
 		if (success) {
@@ -84,7 +87,7 @@ class RSVP extends Component {
 					<div className="container">
 						<section>
 							<div className="grid-flex center break-lg">
-								<div className="col-8">
+								<div className="col-6 stagger-in-items">
 									<h3>RSVP</h3>
 									<div className="my-3">
 										<h6 className="my-2">RSVP for your entire party.</h6>
@@ -96,7 +99,7 @@ class RSVP extends Component {
 										 />
 									</div>
 									<div className="my-3">
-										<h6 className="my-2">Are you able to make it?</h6>
+										<h6 className="my-2">Will you join us?</h6>
 										<Radio
 											name="status"
 											value="yes"
@@ -108,12 +111,6 @@ class RSVP extends Component {
 											value="no"
 											label="No"
 											onChange={(event) => this.setState({status: 'no'})}
-										/>
-										<Radio
-											name="status"
-											value="maybe"
-											label="Maybe"
-											onChange={(event) => this.setState({status: 'maybe'})}
 										/>
 									</div>
 
@@ -133,12 +130,24 @@ class RSVP extends Component {
 											onChange={(event) => this.setState({count: event.target.value})}
 										/>
 									</div>
+									{count > 1 ? (
+										<div className="my-3">
+											<Input
+											 	label="Guest's Full Name"
+												name="Guest Full Name"
+												value={guest}
+												onChange={(event) => this.setState({guest: event.target.value})}
+											 />
+										</div>
+									) : false}
 									<div className="my-3 align-center">
-										<Button
-											disabled={disabled}
-											label="Submit"
-											onClick={this.handleClick}
-										/>
+										<div className="btn-bg">
+											<Button
+												disabled={disabled}
+												label="Submit"
+												onClick={this.handleClick}
+											/>
+										</div>
 									</div>
 								</div>
 							</div>

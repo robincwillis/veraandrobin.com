@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { Button } from 'gw-ui';
 
+import ScrollTransitionIn from 'components/ScrollTransitionIn';
+
 import Background from 'components/Background';
 import Reef3 from 'assets/images/reef-3.jpg';
 
@@ -23,7 +25,7 @@ class Home extends Component {
 					<div className="container">
 					<section>
 						<div className="grid-flex center">
-							<div className="col-8 align-center">
+							<div className="col-8 align-center stagger-in-items">
 								<h3 className="title">
 									<span>Vera </span>
 									<span>& </span>

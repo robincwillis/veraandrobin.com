@@ -5,6 +5,6 @@ module.exports = {
 		"/rsvp",
 	],
 	locals : {
-		title: 'Robin & Vera'
+		title: 'Vera & Robin'
 	}
 }

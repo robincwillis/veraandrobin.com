@@ -37,8 +37,25 @@ class Travel extends Component {
 				<div className="page">
 					<div className="container">
 						<section>
+							<div className="grid-flex-">
+								<div className="col-10 stagger-in-items">
+									<h6>Getting to the wedding.</h6>
+									<h4>Airports</h4>
+									<p>
+										<a href="https://www.flylax.com/">Los Angeles Airport</a>
+									</p>
+									<p>
+										<a href="http://hollywoodburbankairport.com/">Burbank Airport</a>
+									</p>
+									<p>
+										<a href="https://www.santabarbaraca.gov/gov/depts/flysba/default.asp">Santa Barbara Airport</a>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
 							<div className="grid-flex center break-lg">
-								<div className="col-10">
+								<div className="col-10 stagger-in-items">
 									<h6>Travel & Accomadations</h6>
 									<h4>AirBnB Options</h4>
 									<ul className="grid-flex my-3">

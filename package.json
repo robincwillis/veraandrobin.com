@@ -47,6 +47,7 @@
     "react-modal": "^3.8.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "scrollmonitor": "^1.2.4",
     "webpack-build-notifier": "^0.1.30"
   }
 }
