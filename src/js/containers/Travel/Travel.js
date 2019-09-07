@@ -30,6 +30,50 @@ const items = [
 	}
 ]
 
+const hotels = [
+	{
+		name: 'The Eagle Inn',
+		href: 'https://www.theeagleinn.com/'
+	},
+	{
+		name: 'The Wayfarer',
+		href: 'https://www.wayfarersb.com/'
+	},
+	{
+		name: 'Harbor view Inn',
+		href: 'https://www.harborviewinnsb.com/'
+	},
+	{
+		name: 'Cabrillo Inn',
+		href: 'https://www.cabrilloinn.com/'
+	},
+	{
+		name: 'The Lemon Tree (relatively close to the house )',
+		href: 'https://www.treeinns.com/'
+	},
+	{
+		name: 'The Goodland (Goleta)',
+		href: 'https://www.thegoodland.com/'
+	},
+
+	{
+		name: 'Villa Rosa Inn',
+		href: 'https://www.villarosainnsb.com/'
+	},
+	{
+		name: 'Best western',
+		href: 'https://www.bestwestern.com/en_US/book/hotels-in-santa-barbara/best-western-beachside-inn/propertyCode.05172.html'
+	},
+	{
+		name: 'The El Encanto',
+		href: 'https://www.belmond.com/hotels/north-america/usa/ca/santa-barbara/belmond-el-encanto/'
+	},
+	{
+		name: 'Four Seasons Biltmore',
+		href: 'https://www.fourseasons.com/santabarbara/'
+	}
+]
+
 class Travel extends Component {
 	render() {
 		return (
@@ -37,18 +81,20 @@ class Travel extends Component {
 				<div className="page">
 					<div className="container">
 						<section>
-							<div className="grid-flex-">
+							<div className="grid-flex center">
 								<div className="col-10 stagger-in-items">
-									<h6>Getting to the wedding.</h6>
+									<h6>Getting to Santa Barbara.</h6>
 									<h4>Airports</h4>
-									<p>
-										<a href="https://www.flylax.com/">Los Angeles Airport</a>
+									<p className="my-1">
+										<a target="_blank" href="https://www.flylax.com/">Los Angeles Airport</a>
 									</p>
-									<p>
-										<a href="http://hollywoodburbankairport.com/">Burbank Airport</a>
+									<p className="my-1">It takes about 1 hour 40 minutes to get to Santa Barbara from LAX</p>
+									<p className="my-1">
+										<a target="_blank" href="http://hollywoodburbankairport.com/">Burbank Airport</a>
 									</p>
-									<p>
-										<a href="https://www.santabarbaraca.gov/gov/depts/flysba/default.asp">Santa Barbara Airport</a>
+									<p className="my-1">It takes about 1 hour 30 minutes to get to Santa Barbara from Burbank</p>
+									<p className="my-1">
+										<a target="_blank" href="https://www.santabarbaraca.gov/gov/depts/flysba/default.asp">Santa Barbara Airport</a>
 									</p>
 								</div>
 							</div>
@@ -57,6 +103,15 @@ class Travel extends Component {
 							<div className="grid-flex center break-lg">
 								<div className="col-10 stagger-in-items">
 									<h6>Travel & Accomadations</h6>
+									<h4>Hotels</h4>
+									<div className="mb-4">
+										{hotels.map(hotel => (
+											<p className="my-1">
+												<a href={hotel.href} target="_blank">{hotel.name}</a>
+											</p>
+										))}
+									</div>
+
 									<h4>AirBnB Options</h4>
 									<ul className="grid-flex my-3">
 										{items.map( (item, index) => (

@@ -33,11 +33,16 @@ class Home extends Component {
 									<span>Wedding </span>
 								</h3>
 								<hr />
-								<h2 className="my-2">Saturday, October 10, 2019</h2>
+								<h2 className="my-2">Saturday, October 19, 2019</h2>
 								<p className="my-2">
+									<a
+										href="https://goo.gl/maps/ZqAv4qsQrdfHsoud7"
+										target="_blank"
+									>
 									1070 Mission Canyon Road
 									<br />
 									Santa Barbara, California 93105
+									</a>
 								</p>
 
 								<p className="my-2">
