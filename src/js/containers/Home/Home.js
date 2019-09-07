@@ -52,7 +52,7 @@ class Home extends Component {
 								</p>
 
 								<p className="my-2">
-									Garden festive. Kids welcome.
+									Garden festive. Kids welcome. Bring a bathing suit!
 								</p>
 
 								<Button
