@@ -3,6 +3,8 @@ import React, { Component, Fragment } from 'react';
 import Background from 'components/Background';
 import Reef1 from 'assets/images/reef-1.jpg';
 
+import SBMap from 'assets/images/sb-map.png';
+
 const items = [
 	{
 		__html: `<div style="width:320px;height:300px;margin:auto" class="airbnb-embed-frame" data-id="12642692" data-view="home"><a href="https://www.airbnb.com/rooms/12642692?s=66&amp;shared_item_type=1&amp;virality_entry_point=1&amp;sharer_id=2285803&amp;source=embed_widget">View On Airbnb</a><a href="https://www.airbnb.com/rooms/12642692?s=66&amp;shared_item_type=1&amp;virality_entry_point=1&amp;sharer_id=2285803&amp;source=embed_widget" rel="nofollow">Mission Suite private downtown studio</a><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>`
@@ -80,6 +82,13 @@ class Travel extends Component {
 			<Fragment>
 				<div className="page">
 					<div className="container">
+						<section>
+							<div className="grid-flex center">
+								<div className="col-10">
+										<img src={SBMap} alt="map" />
+								</div>
+							</div>
+						</section>
 						<section>
 							<div className="grid-flex center">
 								<div className="col-10 stagger-in-items">

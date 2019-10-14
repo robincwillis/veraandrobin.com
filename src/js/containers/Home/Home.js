@@ -46,7 +46,7 @@ class Home extends Component {
 								</p>
 
 								<p className="my-2">
-									Ceremony will begin at 2:00pm
+									Ceremony will begin at 3:30pm
 									<br />
 									Drinks, dinner and dancing after.
 								</p>
