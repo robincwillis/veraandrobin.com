@@ -34,38 +34,18 @@ class Home extends Component {
 								</h3>
 								<hr />
 								<h2 className="my-2">Saturday, October 19, 2019</h2>
-								<p className="my-2">
-									<a
-										href="https://goo.gl/maps/ZqAv4qsQrdfHsoud7"
-										target="_blank"
-									>
-									1070 Mission Canyon Road
-									<br />
-									Santa Barbara, California 93105
-									</a>
-								</p>
-
-								<p className="my-2">
-									Ceremony will begin at 3:30pm
-									<br />
-									Drinks, dinner and dancing after.
-								</p>
-
-								<p className="my-2">
-									Garden festive. Kids welcome. Bring a bathing suit!
-								</p>
 
 								<Button
 									className="my-2"
-									label="Map"
-									href="https://goo.gl/maps/ZqAv4qsQrdfHsoud7"
+									label="Registry"
+									href="https://www.zola.com/registry/veraandrobin"
 									target="_blank"
 								/>
 								<div className="hide-at-lg">
 									<Button
 										className="my-2"
-										label="Travel"
-										href="/travel"
+										label="Photos"
+										href="https://debris.smugmug.com/Weddings/Vera-and-Robin-Wedding/"
 									/>
 								</div>
 							</div>

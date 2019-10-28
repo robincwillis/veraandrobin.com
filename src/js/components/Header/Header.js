@@ -50,13 +50,9 @@ class Header extends Component {
 
 	render () {
 		const navItems = [
-			// {
-				// path: '/',
-				// title: 'The Wedding'
-		// 	},
 			{
-				path: '/travel',
-				title: 'Travel & Accommodations'
+				path: 'https://debris.smugmug.com/Weddings/Vera-and-Robin-Wedding/',
+				title: 'Photos'
 			}
 		];
 
@@ -98,8 +94,8 @@ class Header extends Component {
 							<div className="col no-grow align-right">
 								<Button
 									className="secondary"
-									href="/rsvp"
-									label="RSVP"
+									href="https://www.zola.com/registry/veraandrobin"
+									label="Registry"
 								/>
 							</div>
 						</div>
