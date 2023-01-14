@@ -33,7 +33,7 @@
     "svg-inline-loader": "^0.8.0",
     "svg-inline-react": "^3.0.0",
     "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
